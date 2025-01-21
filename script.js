@@ -16,42 +16,51 @@ function calculate() {
       return value % 1 === 0 ? value.toFixed(0) : value.toFixed(2);
     }
   
-    // Perform calculations
-    const percentageAofB = (numberA / numberB) * 100;
-    const percentageBofA = (numberB / numberA) * 100;
-    const increaseAByBPercent = numberA * (1 + numberB / 100);
-    const decreaseAByBPercent = numberA * (1 - numberB / 100);
-    const increaseBByAPercent = numberB * (1 + numberA / 100);
-    const decreaseBByAPercent = numberB * (1 - numberA / 100);
-    const originalAIfBPercent = numberA / (numberB / 100);
-    const originalBIfAPercent = numberB / (numberA / 100);
-  
-    // Append results with headings
-    const sections = [
-      {
-        heading: "Percentage Difference",
-        results: [
-          { text: `<strong>${numberA}</strong> is ${formatNumber(percentageAofB)}% of <strong>${numberB}</strong>.`, value: percentageAofB },
-          { text: `<strong>${numberB}</strong> is ${formatNumber(percentageBofA)}% of <strong>${numberA}</strong>.`, value: percentageBofA },
-        ],
-      },
-      {
-        heading: "Percentage Change",
-        results: [
-          { text: `<strong>${numberA}</strong> increased by <strong>${numberB}%</strong> is ${formatNumber(increaseAByBPercent)}.`, value: increaseAByBPercent },
-          { text: `<strong>${numberA}</strong> decreased by <strong>${numberB}%</strong> is ${formatNumber(decreaseAByBPercent)}.`, value: decreaseAByBPercent },
-          { text: `<strong>${numberB}</strong> increased by <strong>${numberA}%</strong> is ${formatNumber(increaseBByAPercent)}.`, value: increaseBByAPercent },
-          { text: `<strong>${numberB}</strong> decreased by <strong>${numberA}%</strong> is ${formatNumber(decreaseBByAPercent)}.`, value: decreaseBByAPercent },
-        ],
-      },
-      {
-        heading: "Starting Value",
-        results: [
-          { text: `If <strong>${numberA}</strong> is <strong>${numberB}%</strong>, the original value is ${formatNumber(originalAIfBPercent)}.`, value: originalAIfBPercent },
-          { text: `If <strong>${numberB}</strong> is <strong>${numberA}%</strong>, the original value is ${formatNumber(originalBIfAPercent)}.`, value: originalBIfAPercent },
-        ],
-      },
-    ];
+// Perform calculations
+const percentageAofB = (numberA / numberB) * 100;
+const percentageBofA = (numberB / numberA) * 100;
+const increaseAByBPercent = numberA * (1 + numberB / 100);
+const decreaseAByBPercent = numberA * (1 - numberB / 100);
+const increaseBByAPercent = numberB * (1 + numberA / 100);
+const decreaseBByAPercent = numberB * (1 - numberA / 100);
+const originalAIfBPercent = numberA / (numberB / 100);
+const originalBIfAPercent = numberB / (numberA / 100);
+const percentageOfA = (numberA * numberB) / 100; // Calculate A% of B
+const percentageOfB = (numberB * numberA) / 100; // Calculate B% of A
+
+// Append results with headings
+const sections = [
+  {
+    heading: "Percentage Difference",
+    results: [
+      { text: `<strong>${numberA}</strong> is ${formatNumber(percentageAofB)}% of <strong>${numberB}</strong>.`, value: percentageAofB },
+      { text: `<strong>${numberB}</strong> is ${formatNumber(percentageBofA)}% of <strong>${numberA}</strong>.`, value: percentageBofA },
+    ],
+  },
+  {
+    heading: "Percentage Change",
+    results: [
+      { text: `<strong>${numberA}</strong> increased by <strong>${numberB}%</strong> is ${formatNumber(increaseAByBPercent)}.`, value: increaseAByBPercent },
+      { text: `<strong>${numberA}</strong> decreased by <strong>${numberB}%</strong> is ${formatNumber(decreaseAByBPercent)}.`, value: decreaseAByBPercent },
+      { text: `<strong>${numberB}</strong> increased by <strong>${numberA}%</strong> is ${formatNumber(increaseBByAPercent)}.`, value: increaseBByAPercent },
+      { text: `<strong>${numberB}</strong> decreased by <strong>${numberA}%</strong> is ${formatNumber(decreaseBByAPercent)}.`, value: decreaseBByAPercent },
+    ],
+  },
+  {
+    heading: "Percentage Of",
+    results: [
+      { text: `<strong>${numberB}%</strong> of <strong>${numberA}</strong> is ${formatNumber(percentageOfB)}.`, value: percentageOfB },
+      { text: `<strong>${numberA}%</strong> of <strong>${numberB}</strong> is ${formatNumber(percentageOfA)}.`, value: percentageOfA },
+    ],
+  },
+  {
+    heading: "Starting Value",
+    results: [
+      { text: `If <strong>${numberA}</strong> is <strong>${numberB}%</strong>, the original value is ${formatNumber(originalAIfBPercent)}.`, value: originalAIfBPercent },
+      { text: `If <strong>${numberB}</strong> is <strong>${numberA}%</strong>, the original value is ${formatNumber(originalBIfAPercent)}.`, value: originalBIfAPercent },
+    ],
+  },
+];
   
     sections.forEach((section) => {
       // Add section heading
