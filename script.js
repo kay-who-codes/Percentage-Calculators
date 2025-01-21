@@ -31,19 +31,25 @@ const percentageOfB = (numberB * numberA) / 100; // Calculate B% of A
 // Append results with headings
 const sections = [
   {
+    heading: "Percentage Increase",
+    results: [
+      { text: `<strong>${numberA}</strong> increased by <strong>${numberB}%</strong> is ${formatNumber(increaseAByBPercent)}.`, value: increaseAByBPercent },
+      { text: `<strong>${numberB}</strong> increased by <strong>${numberA}%</strong> is ${formatNumber(increaseBByAPercent)}.`, value: increaseBByAPercent },
+    ],
+  },
+  },
+  {
+    heading: "Percentage Decrease",
+    results: [
+      { text: `<strong>${numberA}</strong> decreased by <strong>${numberB}%</strong> is ${formatNumber(decreaseAByBPercent)}.`, value: decreaseAByBPercent },
+      { text: `<strong>${numberB}</strong> decreased by <strong>${numberA}%</strong> is ${formatNumber(decreaseBByAPercent)}.`, value: decreaseBByAPercent },
+    ],
+  },
+  {
     heading: "Percentage Difference",
     results: [
       { text: `<strong>${numberA}</strong> is ${formatNumber(percentageAofB)}% of <strong>${numberB}</strong>.`, value: percentageAofB },
       { text: `<strong>${numberB}</strong> is ${formatNumber(percentageBofA)}% of <strong>${numberA}</strong>.`, value: percentageBofA },
-    ],
-  },
-  {
-    heading: "Percentage Change",
-    results: [
-      { text: `<strong>${numberA}</strong> increased by <strong>${numberB}%</strong> is ${formatNumber(increaseAByBPercent)}.`, value: increaseAByBPercent },
-      { text: `<strong>${numberA}</strong> decreased by <strong>${numberB}%</strong> is ${formatNumber(decreaseAByBPercent)}.`, value: decreaseAByBPercent },
-      { text: `<strong>${numberB}</strong> increased by <strong>${numberA}%</strong> is ${formatNumber(increaseBByAPercent)}.`, value: increaseBByAPercent },
-      { text: `<strong>${numberB}</strong> decreased by <strong>${numberA}%</strong> is ${formatNumber(decreaseBByAPercent)}.`, value: decreaseBByAPercent },
     ],
   },
   {
