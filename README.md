@@ -7,6 +7,7 @@ A simple and interactive web-based percentage calculator that allows users to pe
 - **Real-Time Calculations**: Results are automatically calculated as soon as the user enters numbers.
 - **Percentage Difference**: Shows how one number relates to the other as a percentage.
 - **Percentage Change**: Calculates how a number increases or decreases by a percentage of another number.
+- **Percentage Of**: Computes the exact value when a percentage of one number is applied to another.
 - **Starting Value**: Determines the original value when a percentage is known.
 - **Bold User Inputs**: User input numbers are emboldened in the results for clear visibility.
 - **Dark Mode**: The app is styled in dark mode, providing a sleek and modern look.
