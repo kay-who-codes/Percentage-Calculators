@@ -21,6 +21,7 @@ A simple and interactive web-based percentage calculator that allows users to pe
 4. View the following results:
     - **Percentage Difference**: Shows how `A` is a percentage of `B`, and vice versa.
     - **Percentage Change**: Displays how `A` and `B` increase or decrease by the other number’s percentage.
+    - **Percentage Of**: Shows `A` percent of `B`, and vice versa.
     - **Starting Value**: Shows what the original value would be if one number was a percentage of the other.
 5. Press the **Reset** button to clear the inputs and results.
 
