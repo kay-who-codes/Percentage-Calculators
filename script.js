@@ -37,7 +37,6 @@ const sections = [
       { text: `<strong>${numberB}</strong> increased by <strong>${numberA}%</strong> is ${formatNumber(increaseBByAPercent)}.`, value: increaseBByAPercent },
     ],
   },
-  },
   {
     heading: "Percentage Decrease",
     results: [
