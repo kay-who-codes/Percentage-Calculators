@@ -2,6 +2,8 @@
 
 A simple and interactive web-based percentage calculator that allows users to perform various percentage-related calculations between two input numbers. The app provides real-time calculations based on user inputs and displays results including percentage difference, percentage change, and starting values.
 
+[![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/Percentage-Calculators/)
+
 ## Features
 
 - **Real-Time Calculations**: Results are automatically calculated as soon as the user enters numbers.
@@ -15,7 +17,7 @@ A simple and interactive web-based percentage calculator that allows users to pe
 
 ## Usage
 
-1. Open the app in a browser - **LINK TO THE APP**.
+1. Open the app in a browser - **[LINK TO THE APP](https://kay-who-codes.github.io/Percentage-Calculators/)**.
 2. Enter two numbers in the input fields labelled "Enter Number A" and "Enter Number B".
 3. The results will be calculated automatically as you type.
 4. View the following results:
