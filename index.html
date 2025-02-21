@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🧮 Percentage Calculator</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
 </head>
 <body>
+<!-- Header Bar -->
+<div id="header"></div>
+
+<!-- Main Content -->
   <div class="container">
     <h1>Percentage Calculator</h1>
     <input type="number" id="numberA" placeholder="Enter Number A" oninput="calculate()" />
@@ -14,6 +19,7 @@
     <button onclick="reset()">Reset</button>
     <div class="results" id="results"></div>
   </div>
-  <script src="script.js"></script>
+<script src="script.js" defer></script>
+<script src="header.js" defer></script>  
 </body>
 </html>
